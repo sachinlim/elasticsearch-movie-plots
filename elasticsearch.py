@@ -7,8 +7,8 @@ from elasticsearch import helpers, Elasticsearch
 elasticsearch = Elasticsearch([{'host': 'localhost', 'port': 9200}])
 
 
-# the main function that calls other functions
 def elastic():
+    # the main function that calls other functions
     my_index = "movies"
 
     # closing index after creating in order to create and update analyzer
@@ -23,8 +23,8 @@ def elastic():
     upload(my_index)
 
 
-# outputting a new csv file after formatting before uploading to Elasticsearch
 def upload(my_index):
+    # outputting a new csv file after formatting before uploading to Elasticsearch
     csv_name = "wiki_movie_plots_deduped.csv"
     sample_size = 1000
     index_name = my_index
