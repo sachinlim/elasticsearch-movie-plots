@@ -46,7 +46,6 @@ GET test73/_search
     }
   } 
 }
-
 ```
 
 Which presents the following: 
